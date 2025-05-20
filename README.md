@@ -1,8 +1,8 @@
 # Proyecto-Final
 
-Proyecto	CRUD Principal	Roles
-Gestor de biblioteca	Libros	Lector, Bibliotecario, Admin
-![image](https://github.com/user-attachments/assets/f9798f83-9159-471b-924b-b37b67f9aa5c)
+
+
+![image](https://github.com/user-attachments/assets/c09e8b7c-2a85-439e-8427-2b3a05beb7f7)
 
 
 
