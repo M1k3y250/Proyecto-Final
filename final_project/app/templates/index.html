@@ -1,0 +1,28 @@
+{% extends "layout.html" %} 
+{% block title %}Home{% endblock %} 
+
+{% block content %}
+<div class="text-center">
+  <h1 class="mt-5">Welcome to the Library Management System</h1>
+  {% if current_user.is_authenticated %}
+  <p class="lead text-muted">
+    Explore our catalog of books in the Dashboard section.
+  </p>
+  {% else %}
+  <p class="lead text-body-secondary">
+    Please log in to access the library resources or contact staff for assistance.
+  </p>
+  {% endif %}
+  
+  {% if not current_user.is_authenticated %}
+  <div class="mt-4">
+    <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-lg mx-2"></a>
+      <i class="bi bi-box-arrow-in-right"></i> Login
+    </a>
+    <a href="{{ url_for('auth.register') }}" class="btn btn-success btn-lg mx-2"></a>
+      <i class="bi bi-person-plus"></i> Register
+    </a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
